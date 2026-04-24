@@ -33,4 +33,4 @@
 ** enjoy!
 
 * Screenshots
-./img/rice.png
+[[file:~/dotfiles/img/rice.png]]
