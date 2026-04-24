@@ -1,0 +1,36 @@
+#+title: Readme
+#+author: hamza
+* Welcome to my Dotfiles!
+** Here, I have all my config for
+        - Niri (scrolling WC)
+        - foot (terminal)
+        - Emacs (doom configs, not sure if it works just with copying and pasting a folder)
+        - .Zshrc (config file for zsh shell)
+        - gruvbox gtk configs (gtk 3 and 4)
+        - gruvbox fuzzel config (for menus in waybar)
+        - waybar (gruvboxidized, and media player needs fixes)
+* Main Features
+ 1. Gruvbox color scheme for an easy-to-read enviroment
+ 2. Minimalism. you're be able to read the configs easyily
+ 3. Emacs. you have an OS in your terminal!
+ 4. consistency. Everything is one colorscheme
+ 5. Mako! we have a notification daemon!
+* How to apply:
+** First, clone the project as so:
+#+BEGIN_SRC bash
+  git clone https://github.com/hamzadotjs/dotfiles.git
+#+END_SRC
+
+** Second, copy/symlink all the dotfiles:
+        #+BEGIN_SRC bash
+        cp -r ~/dotfiles/* ~/.config
+        #+END_SRC
+***** or if you like symlinks
+        #+BEGIN_SRC bash
+        ln -sf ~/dotfiles/* ~/.config
+        #+END_SRC
+
+** enjoy!
+
+* Screenshots
+./img/rice.png

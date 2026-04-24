@@ -1,0 +1,17 @@
+# Global settings
+max-history=100
+sort=-time
+default-timeout=5000
+
+# Colors (Tokyo Night)
+background-color=#282828
+text-color=#fb1c7
+border-color=#a89984
+progress-color=source #7c6f64
+
+[urgency=low]
+default-timeout=2000
+
+[urgency=high]
+border-color=#bf626a
+default-timeout=4000

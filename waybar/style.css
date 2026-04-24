@@ -1,0 +1,357 @@
+/* ═══════════════════════════════════════════════════════════════════
+  Waybar Modern Flat Design - Solid Colors
+*/
+
+ /* ───────── Global Styles ───────── */
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 13px;
+  font-weight: 700;
+  min-height: 0;
+}
+
+/* ───────── Window ───────── */
+window#waybar {
+  background: transparent;
+  color: #c0caf5;
+  transition: none;
+}
+
+/* ───────── Common Module Styles ───────── */
+#workspaces,
+#clock,
+#custom-player,
+#pulseaudio,
+#pulseaudio.microphone,
+#network,
+#bluetooth,
+#custom-power,
+#tray,
+#cpu,
+#memory,
+#battery,
+#backlight,
+#language{
+  padding: 2px 6px;
+  margin: 1px 2px;
+  background: #282828;
+  border-radius: 10px;
+  border: 1px solid #a89984;
+  transition: all 0.2s ease;
+  color: #fbf1c7;
+}
+
+#workspaces,
+#clock,
+#custom-player,
+#pulseaudio,
+#network,
+#bluetooth,
+#custom-power,
+#language,
+#tray,
+#cpu,
+#memory,
+#battery,
+#backlight{
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* Hover effects */
+#custom-power:hover{
+  background: #3c3836;
+  border: 1px solid #3c3836;
+  box-shadow: 0 4px 12px #3c3836;
+}
+/* ───────── Workspaces ───────── */
+#workspaces {
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+#workspaces button {
+  padding: 2px 6px;
+  margin: 0 1px;
+  color: #7c6f64;
+  background: #282828;
+  border-radius: 10px;
+  border: 1px solid #3c3836;
+  box-shadow: 0 2px 4px #3c3836);
+  transition: all 0.2s ease;
+  min-width: 22px;
+}
+
+#workspaces button.active {
+  background: #32302f;
+  color: #fbf1c7;
+  border: 0.8px solid #a89984;
+}
+
+#workspaces button:hover {
+  background: rgba(0, 0, 0, 0.539);
+  color: #7c6f64;
+  border: 1px solid #a89984;
+}
+
+/* ───────── Clock ───────── */
+#clock {
+  font-weight: 600;
+  color: #fbf1c7;
+  background: #282828;
+  border: 1px solid #a89984;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ───────── Media Player ───────── */
+#custom-player {
+  color: #fbf1c7;
+  margin-right: 8px;
+}
+
+#custom-player.playing {
+  color: #fbf1c7;
+  animation: pulse 2s infinite;
+}
+
+#custom-player.paused {
+  color: #fbf1c7;
+}
+
+#custom-player.stopped {
+  color: #4c566a;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+/* ───────── Audio ───────── */
+#pulseaudio {
+  color: #fbf1c7;
+}
+
+#pulseaudio.muted {
+  color: #fb4934;
+  background: #282828;
+}
+
+pulseaudio#microphone {
+  color: #4c566a;
+}
+
+/* ───────── CPU & Memory ───────── */
+#cpu {
+  color: #fbf1c7;
+}
+
+#cpu.warning {
+  color: #fabd2f;
+}
+
+#cpu.critical {
+  color: #bf616a;
+  animation: blink 1s infinite;
+}
+
+#memory {
+  color: #fbf1c7;
+}
+
+#memory.warning {
+  color: #fabd2f;
+}
+
+#memory.critical {
+  color: #bf616a;
+  animation: blink 1s infinite;
+}
+
+
+/* ───────── Battery ───────── */
+#battery {
+  color: #fbf1c7;
+}
+
+#battery.charging, #battery.plugged {
+  color: #b8bb26;
+  background: #282828;
+}
+
+#battery.warning:not(.charging) {
+  color: #fabd2f;
+  background: #282828;
+}
+
+#battery.critical:not(.charging) {
+  color: #bf616a;
+  background: #282828;
+  animation: blink 1s infinite;
+}
+
+/* ───────── Backlight ───────── */
+#backlight {
+  color: #fbf1c7;
+}
+/* ───────── Network ───────── */
+#network {
+  color: #88c0d0;
+}
+
+#network.disconnected {
+  color: #fabd2f;
+  background: #282828;
+}
+
+/* ───────── Power ───────── */
+#custom-power {
+  color: #bf616a;
+  font-size: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* ─────────  Language ───────── */
+#language {
+    color: #fbf1c7;
+    border: 1px solid #a89984;
+    transition: all 0.2s ease;
+    min-width: 22px;
+}
+
+#workspaces button.active {
+  background: #32302f;
+  color: #fbf1c7;
+  border: 0.8px solid #a89984;
+}
+
+#workspaces button:hover {
+  background: rgba(0, 0, 0, 0.539);
+  color: #7c6f64;
+  border: 1px solid #a89984;
+}
+
+/* ───────── Clock ───────── */
+#clock {
+  font-weight: 600;
+  color: #fbf1c7;
+  background: #282828;
+  border: 1px solid #a89984;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ───────── Media Player ───────── */
+#custom-player {
+  color: #7c6f64;
+  margin-right: 8px;
+}
+
+#custom-player.playing {
+  color: #282828;
+  animation: pulse 2s infinite;
+}
+
+#custom-player.paused {
+  color: #282828;
+}
+
+#custom-player.stopped {
+  color: #4c566a;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+/* ───────── Audio ───────── */
+#pulseaudio {
+  color: #fbf1c7;
+}
+
+#pulseaudio.muted {
+  color: #fb4934;
+  background: #282828;
+}
+
+pulseaudio#microphone {
+  color: #4c566a;
+}
+
+/* ───────── CPU & Memory ───────── */
+#cpu {
+  color: #fbf1c7;
+}
+
+#cpu.warning {
+  color: #fabd2f;
+}
+
+#cpu.critical {
+  color: #bf616a;
+  animation: blink 1s infinite;
+}
+
+#memory {
+  color: #fbf1c7;
+}
+
+#memory.warning {
+  color: #fabd2f;
+}
+
+#memory.critical {
+  color: #bf616a;
+  animation: blink 1s infinite;
+}
+
+
+/* ───────── Battery ───────── */
+#battery {
+  color: #fbf1c7;
+}
+
+#battery.charging, #battery.plugged {
+  color: #b8bb26;
+  background: #282828;
+}
+
+#battery.warning:not(.charging) {
+  color: #fabd2f;
+  background: #282828;
+}
+
+#battery.critical:not(.charging) {
+  color: #bf616a;
+  background: #282828;
+  animation: blink 1s infinite;
+}
+
+/* ───────── Backlight ───────── */
+#backlight {
+  color: #fbf1c7;
+}
+/* ───────── Network ───────── */
+#network {
+  color: #88c0d0;
+}
+
+#network.disconnected {
+  color: #fabd2f;
+  background: #282828;
+}
+
+/* ───────── Power ───────── */
+#custom-power {
+  color: #bf616a;
+  font-size: 12px;
+  padding-left: 8px;
+  padding-right: 12px;
+}
+
+/* ───────── End of css ───────── */

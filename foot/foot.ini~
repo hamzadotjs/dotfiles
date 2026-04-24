@@ -1,0 +1,11 @@
+[main]
+## Font
+font=JetBrains Mono Nerd Font:size=13, FreeSans:size=13
+
+## Padding
+pad=12x12
+
+## colors
+include=~/.config/foot/tokyonight.ini
+
+letter-spacing=0
