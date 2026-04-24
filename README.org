@@ -9,9 +9,10 @@
         - gruvbox gtk configs (gtk 3 and 4)
         - gruvbox fuzzel config (for menus in waybar)
         - waybar (gruvboxidized, and media player needs fixes)
+        - Fetcher (well its not a config its the program itself)
 * Main Features
 -  1. Gruvbox color scheme for an easy-to-read enviroment
--  2. Minimalism. you're be able to read the configs easyily
+-  2. Minima
 -  3. Emacs. you have an OS in your terminal!
 -  4. consistency. Everything is one colorscheme
 -  5. Mako! we have a notification daemon!
@@ -20,7 +21,7 @@
   -   6.2 gruvbox theme!
   -   6.3 lsp for web, kotlin, and others
   -   6.4 neotree autostart, just like noevim!
-* How to apply:
+* How to app
 ** Initials : install deps, for example, on arch
 #+BEGIN_SRC bash
 sudo pacman -S niri mako foot zsh waybar emacs
@@ -30,6 +31,13 @@ sudo pacman -S niri mako foot zsh waybar emacs
 git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.config/emacs
 ~/.config/emacs/bin/doom install
 #+END_SRC
+*** then , install fetcher
+#+BEGIN_SRC bash
+git clone https://github.com/hamzadotjs/Fetcher.git
+cd Fetcher
+chmod +x install.sh
+./install.sh
+#+END_#+END_SRC
 ** First, clone the project as so:
 #+BEGIN_SRC bash
   git clone https://github.com/hamzadotjs/dotfiles.git
