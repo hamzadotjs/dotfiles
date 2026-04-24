@@ -10,18 +10,18 @@
         - gruvbox fuzzel config (for menus in waybar)
         - waybar (gruvboxidized, and media player needs fixes)
 * Main Features
- 1. Gruvbox color scheme for an easy-to-read enviroment
- 2. Minimalism. you're be able to read the configs easyily
- 3. Emacs. you have an OS in your terminal!
- 4. consistency. Everything is one colorscheme
- 5. Mako! we have a notification daemon!
- 6. doom emacs features
-    6.1 org-modern with a beutiful config
-    6.2 gruvbox theme!
-    6.3 lsp for web, kotlin, and others
-    6.4 neotree autostart, just like noevim!
+-  1. Gruvbox color scheme for an easy-to-read enviroment
+-  2. Minimalism. you're be able to read the configs easyily
+-  3. Emacs. you have an OS in your terminal!
+-  4. consistency. Everything is one colorscheme
+-  5. Mako! we have a notification daemon!
+-  6. doom emacs features
+  -   6.1 org-modern with a beutiful config
+  -   6.2 gruvbox theme!
+  -   6.3 lsp for web, kotlin, and others
+  -   6.4 neotree autostart, just like noevim!
 * How to apply:
-** INIT : install deps, for example, on arch
+** Initials : install deps, for example, on arch
 #+BEGIN_SRC bash
 sudo pacman -S niri mako foot zsh waybar emacs
 #+END_SRC
