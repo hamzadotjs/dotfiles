@@ -2,7 +2,7 @@
 #+author: hamza
 * Welcome to my Dotfiles!
 ** Here, I have all my config for
-        - Niri (scrolling WC)
+        - Niri (scrolling Wayland Compositor)
         - foot (terminal)
         - Emacs (doom configs, not sure if it works just with copying and pasting a folder)
         - .Zshrc (config file for zsh shell)
