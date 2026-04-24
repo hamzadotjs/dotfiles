@@ -47,4 +47,4 @@ git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.config/emacs
 ** enjoy!
 
 * Screenshots
-[[file:~/dotfiles/img/rice.png]]
+[[file:./img/rice.png]]
