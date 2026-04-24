@@ -1,6 +1,6 @@
 #+title: Readme
 #+author: hamza
-* Welcome to my Dotfiles!
+* Welcome to the ILinux config!
 ** Here, I have all my config for
         - Niri (scrolling Wayland Compositor)
         - foot (terminal)
@@ -15,7 +15,21 @@
  3. Emacs. you have an OS in your terminal!
  4. consistency. Everything is one colorscheme
  5. Mako! we have a notification daemon!
+ 6. doom emacs features
+    6.1 org-modern with a beutiful config
+    6.2 gruvbox theme!
+    6.3 lsp for web, kotlin, and others
+    6.4 neotree autostart, just like noevim!
 * How to apply:
+** INIT : install deps, for example, on arch
+#+BEGIN_SRC bash
+sudo pacman -S niri mako foot zsh waybar emacs
+#+END_SRC
+*** then, install doom emacs
+#+BEGIN_SRC bash
+git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.config/emacs
+~/.config/emacs/bin/doom install
+#+END_SRC
 ** First, clone the project as so:
 #+BEGIN_SRC bash
   git clone https://github.com/hamzadotjs/dotfiles.git
