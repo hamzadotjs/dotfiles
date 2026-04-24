@@ -1,4 +1,4 @@
-#+title: Readme
+thub.com/hamzadotjs/Fetcher#+title: Readme
 #+author: hamza
 * Welcome to the ILinux config!
 ** Here, I have all my config for
@@ -37,9 +37,10 @@ git clone https://github.com/hamzadotjs/Fetcher.git
 cd Fetcher
 chmod +x install.sh
 ./install.sh
-#+END_#+END_SRC
+#+END_SRC
+* Applying the config:
 ** First, clone the project as so:
-#+BEGIN_SRC bash
+,#+BEGIN_SRC bash
   git clone https://github.com/hamzadotjs/dotfiles.git
 #+END_SRC
 
