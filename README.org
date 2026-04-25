@@ -74,5 +74,5 @@ chmod +x install.sh
 
 * Screenshots
 [[file:./img/rice.png]]
-file:./img/2.png
 [[file:./img/helium-tabs.png]]
+ [[file:./img/2.png]]

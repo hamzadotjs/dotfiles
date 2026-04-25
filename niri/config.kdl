@@ -152,6 +152,7 @@ binds {
     Super+v { spawn "foot" "--title" "clipse" "-e" "bash" "-lc" "clipse"; }
     Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
     Super+B { spawn "helium-browser"; }
+    Super+P {spawn "pcmanfm"; }
     XF86AudioRaiseVolume { spawn-sh "amixer -q set Master 5%+"; }
     XF86AudioLowerVolume { spawn-sh "amixer -q set Master 5%-"; }
     XF86AudioMute { spawn-sh "amixer -q set Master toggle"; }
