@@ -1,4 +1,4 @@
-thub.com/hamzadotjs/Fetcher#+title: Readme
+#+title: Readme
 #+author: hamza
 * Welcome to the ILinux config!
 ** Here, I have all my config for
@@ -11,10 +11,10 @@ thub.com/hamzadotjs/Fetcher#+title: Readme
         - waybar (gruvboxidized, and media player needs fixes)
         - Fetcher (well its not a config its the program itself)
         - Helium for fast-private and minimal browsing
-        - yazi and/or pcmanfm (nice to have both)
+        - yazi and/or pcmanfm (File managers, yazi is CLI and pcmanfm is GUI, Nice to have both)
 * Main Features
 -  1. Gruvbox color scheme for an easy-to-read enviroment
--  2. Minima
+-  2. Minimal
 -  3. Emacs. you have an OS in your terminal!
 -  4. consistency. Everything is one colorscheme
 -  5. Mako! we have a notification daemon!
@@ -23,7 +23,10 @@ thub.com/hamzadotjs/Fetcher#+title: Readme
   -   6.2 gruvbox theme!
   -   6.3 lsp for web, kotlin, and others
   -   6.4 neotree autostart, just like noevim!
-* How to app
+- Helium for browsers (no firefox bloatware)
+- Pcmanfm for GUI file manager, Minimal, fast, and GTK so free theme!
+- yazi for real file managment, CLI, and powerfull
+* How to apply
 ** Initials : install deps, for example, on arch
 #+BEGIN_SRC bash
 sudo pacman -Syu niri mako foot zsh waybar emacs yazi pcmanfm
@@ -48,13 +51,13 @@ cd Fetcher
 chmod +x install.sh
 ./install.sh
 #+END_SRC
-* Applying the config:
-** First, clone the project as so:
-,#+BEGIN_SRC bash
+** Applying the config:
+*** First, clone the project as so:
+#+BEGIN_SRC bash
   git clone https://github.com/hamzadotjs/dotfiles.git
 #+END_SRC
 
-** Second, copy/symlink all the dotfiles:
+*** Second, copy/symlink all the dotfiles:
         #+BEGIN_SRC bash
         cp -r ~/dotfiles/* ~/.config
         #+END_SRC
@@ -62,8 +65,14 @@ chmod +x install.sh
         #+BEGIN_SRC bash
         ln -sf ~/dotfiles/* ~/.config
         #+END_SRC
-
+*** Third, make helium look good
+**** First, enable zen mode
+***** open chrome://flags
+***** enable helium-zen-mode
+***** then enable it in ssettings --> appearance, and enable vertical tabs.
 ** enjoy!
 
 * Screenshots
 [[file:./img/rice.png]]
+file:./img/2.png
+[[file:./img/helium-tabs.png]]
