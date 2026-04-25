@@ -10,6 +10,8 @@ thub.com/hamzadotjs/Fetcher#+title: Readme
         - gruvbox fuzzel config (for menus in waybar)
         - waybar (gruvboxidized, and media player needs fixes)
         - Fetcher (well its not a config its the program itself)
+        - Helium for fast-private and minimal browsing
+        - yazi and/or pcmanfm (nice to have both)
 * Main Features
 -  1. Gruvbox color scheme for an easy-to-read enviroment
 -  2. Minima
@@ -24,7 +26,15 @@ thub.com/hamzadotjs/Fetcher#+title: Readme
 * How to app
 ** Initials : install deps, for example, on arch
 #+BEGIN_SRC bash
-sudo pacman -S niri mako foot zsh waybar emacs
+sudo pacman -Syu niri mako foot zsh waybar emacs yazi pcmanfm
+#+END_SRC
+*** Next, Install paru (an AUR Helper) and helium from th AUR
+#+BEGIN_SRC bash
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+paru -S helium-browser-bin
 #+END_SRC
 *** then, install doom emacs
 #+BEGIN_SRC bash
