@@ -10,7 +10,7 @@
 // autostart shit
 prefer-no-csd
 spawn-at-startup "awww-daemon"
-spawn-at-startup "awww img - center ~/Pictures/wallpapers/cozy-upscaled.png "
+spawn-at-startup "awww img - center ~/wallpapers/gruvbox-astronut.png "
 spawn-at-startup "waybar"
 spawn-at-startup "udiskie &"
 spawn-at-startup "clipse -listen"

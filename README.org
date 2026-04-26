@@ -12,6 +12,7 @@
         - Fetcher (well its not a config its the program itself)
         - Helium for fast-private and minimal browsing
         - yazi and/or pcmanfm (File managers, yazi is CLI and pcmanfm is GUI, Nice to have both)
+        - ttf-jetbrains-mono-nerd (Nice monospaced font)
 * Main Features
 -  1. Gruvbox color scheme for an easy-to-read enviroment
 -  2. Minimal
@@ -28,16 +29,17 @@
 - yazi for real file managment, CLI, and powerfull
 * How to apply
 ** Initials : install deps, for example, on arch
-#+BEGIN_SRC bash
-sudo pacman -Syu niri mako foot zsh waybar emacs yazi pcmanfm
-#+END_SRC
-*** Next, Install paru (an AUR Helper) and helium from th AUR
+*** We'll use the AUR to install packages, so, lets gran an AUR helper, let's use paru because it's easy to use.
+***** install paru
 #+BEGIN_SRC bash
 sudo pacman -S --needed base-devel
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
-paru -S helium-browser-bin
+#+END_SRC
+**** Install all the deps
+#+BEGIN_SRC bash
+paru -S helium-browser-bin awww wofi waybar pcmanfm yazi emacs foot zsh ttf-jetbrains-mono-nerd
 #+END_SRC
 *** then, install doom emacs
 #+BEGIN_SRC bash
@@ -59,12 +61,16 @@ chmod +x install.sh
 
 *** Second, copy/symlink all the dotfiles:
         #+BEGIN_SRC bash
-        cp -r ~/dotfiles/* ~/.config
+            mv  ~/dotfiles/wallpapers ~/
+            cp -r ~/dotfiles/* ~/.config
         #+END_SRC
+
 ***** or if you like symlinks
         #+BEGIN_SRC bash
-        ln -sf ~/dotfiles/* ~/.config
+            mv ~/dotfiles/wallpapers ~/
+            ln -sf ~/dotfiles/* ~/.config
         #+END_SRC
+
 *** Third, make helium look good
 **** First, enable zen mode
 ***** open chrome://flags
@@ -75,4 +81,4 @@ chmod +x install.sh
 * Screenshots
 [[file:./img/rice.png]]
 [[file:./img/helium-tabs.png]]
- [[file:./img/2.png]]
+[[file:./img/2.png]]
