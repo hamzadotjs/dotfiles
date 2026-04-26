@@ -1,6 +1,9 @@
-#+title: Readme
+#+title: Niri config for Work
 #+author: hamza
-* Welcome to the ILinux config!
+* Welcome to yet another WC config for work "niri"!
+[[file:./img/rice.png]]
+[[file:./img/helium-tabs.png]]
+[[file:./img/2.png]]
 ** Here, I have all my config for
         - Niri (scrolling Wayland Compositor)
         - foot (terminal)
@@ -29,7 +32,7 @@
 - yazi for real file managment, CLI, and powerfull
 * How to apply
 ** Initials : install deps, for example, on arch
-*** We'll use the AUR to install packages, so, lets gran an AUR helper, let's use paru because it's easy to use.
+*** We'll use the AUR to install packages, so, lets grab an AUR helper, let's use paru because it's easy to use.
 ***** install paru
 #+BEGIN_SRC bash
 sudo pacman -S --needed base-devel
@@ -41,12 +44,12 @@ makepkg -si
 #+BEGIN_SRC bash
 paru -S helium-browser-bin awww wofi waybar pcmanfm yazi emacs foot zsh ttf-jetbrains-mono-nerd
 #+END_SRC
-*** then, install doom emacs
+*** Then, install doom emacs
 #+BEGIN_SRC bash
 git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.config/emacs
 ~/.config/emacs/bin/doom install
 #+END_SRC
-*** then , install fetcher
+*** After that, install fetcher
 #+BEGIN_SRC bash
 git clone https://github.com/hamzadotjs/Fetcher.git
 cd Fetcher
@@ -75,10 +78,5 @@ chmod +x install.sh
 **** First, enable zen mode
 ***** open chrome://flags
 ***** enable helium-zen-mode
-***** then enable it in ssettings --> appearance, and enable vertical tabs.
+***** then enable it in settings --> appearance, and enable vertical tabs.
 ** enjoy!
-
-* Screenshots
-[[file:./img/rice.png]]
-[[file:./img/helium-tabs.png]]
-[[file:./img/2.png]]
